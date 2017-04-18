@@ -1,0 +1,86 @@
+// Colors
+$primary-color: #fff;
+$secondary-color: #333;
+$table-color: #777;
+$table-menu-button-bg-color: #ccf;
+$table-menu-button-color: #111;
+$border-color: #555;
+$table-menu-button-hover-color: #ddf;
+$clicky-color: #aaf;
+
+// Font Family
+$font-family: 'Courier New', Courier, monospace;
+
+body {
+  margin: 0;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+table.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  border-bottom-right-radius: 6px;
+  background-color: $table-color;
+  box-shadow: #000 0 0 15px;
+  font-family: $font-family;
+
+  h1 {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  td {
+    text-align: center;
+
+    label {
+      width: 80px;
+    }
+  }
+
+  .result {
+    text-align: right;
+  }
+
+  button {
+    width: 80%;
+    background-color: $table-menu-button-bg-color;
+    color: $table-menu-button-color;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 12px;
+    border: 1px solid $border-color;
+    transition: width 0.5s, background-color 0.5s;
+    border-radius: 3px;
+
+    &:active,
+    &:focus {
+      text-align: right;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $table-menu-button-hover-color;
+      width: 85%;
+      transition: width 0.5s, background-color 0.5s;
+    }
+  }
+}
+
+.clicky {
+  position: absolute;
+  border-radius: 50%;
+  background-color: $clicky-color;
+  border: 1px solid $border-color;
+  box-shadow: #000 0 0 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
