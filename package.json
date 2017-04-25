@@ -7,9 +7,8 @@
     "dev": "run-p dev:*",
     "lint:htmlhint": "htmlhint index.html",
     "lint:standard": "standard",
-    "lint": "run-s lint:*",
     "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
-    "build": "run-s build:*",
+    "build": "run-s lint:* build:*",
     "deploy:surge": "surge --project . --domain https://briscoe2-kg-tgc7noax99ajvzzg.surge.sh/",
     "deploy": "run-s build:* deploy:surge"
   },
