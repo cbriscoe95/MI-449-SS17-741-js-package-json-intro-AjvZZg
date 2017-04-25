@@ -1,0 +1,7 @@
+yarn add --dev stylelint stylelint-config-standard
+
+Could be a problem with the above way that I installed the packages
+or with the way I'm writing the path "source/scss/style.scss" since it's installed
+locally I shouldn't need to writw an absolute path.
+
+submit to erik and make sure to add a note about stylelint not helping.
